@@ -1,0 +1,26 @@
+{
+  "name": "testserver",
+  "version": "1.0.0",
+  "description": "My Test server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+ "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charek/TestServer.git"
+  },
+  "author": "charek@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charek/TestServer/issues"
+  },
+  "homepage": "https://github.com/Charek/TestServer#readme",
+  "dependencies": {
+    "chai": "4.3.7",
+    "express": "4.18.2",
+    "mocha": "10.2.0",
+    "request": "2.88.2"
+  }
+}
