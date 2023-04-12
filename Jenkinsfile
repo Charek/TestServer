@@ -19,16 +19,12 @@ pipeline {
     }
      
     
-    stage('Start Server') {
-      steps {
-        sh 'npm start'
-      }
-    }
+   
     
     stage('Test') {
       steps {
        
-         sh 'npm test'
+         sh 'npm run test'
       }
     }      
   }
