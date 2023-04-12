@@ -7,7 +7,8 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/charek/TestServer.git'
+        git branch: 'main',
+        url: 'https://github.com/charek/TestServer.git'
       }
     }
         
