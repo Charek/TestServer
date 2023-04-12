@@ -5,7 +5,7 @@ pipeline {
     
   stages {
         
-    stage('Cloning Git') {
+    stage('Clone repo') {
       steps {
         git branch: 'main',
         url: 'https://github.com/charek/TestServer.git'
@@ -18,9 +18,16 @@ pipeline {
       }
     }
      
+    
+    stage('Start Server') {
+      steps {
+        sh 'npm start'
+      }
+    }
+    
     stage('Test') {
       steps {
-         sh 'npm start'
+       
          sh 'npm test'
       }
     }      
