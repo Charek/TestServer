@@ -14,7 +14,7 @@ spec:
         app: testserver
     spec:
       containers:
-      - image: docker.io/charekc/testserver:v3
+      - image: docker.io/charekc/testserver:v4
         name: testserver
         ports:
         - containerPort: 8000
